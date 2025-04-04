@@ -1,0 +1,190 @@
+body {
+  
+  margin: 0;
+  padding: 0;
+  color: rgb(23, 23, 23);
+  background-color: #a2d86dca;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+  padding: 20px;
+  
+  text-align: center;
+}
+
+#logo, #logo-link {
+  position: absolute;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  top: 20px;
+}
+
+#logo {
+  background-image: url("https://cdn-icons-png.freepik.com/256/16600/16600271.png");
+  right: 60px;
+}
+
+#logo-link {
+  background-image: url("https://cdn-icons-png.freepik.com/256/13924/13924070.png");
+  right: 20px;
+}
+
+.plant-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.plant-box {
+  background: #fdfafa;
+  box-shadow: 0px 20px 52px rgba(0, 0, 0, 0.15);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.plant-box:hover {
+  transform: translateY(-5px);
+}
+
+.plant-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 18px 18px 0 0;
+}
+
+.plant-box .label {
+  background-color: rgb(239, 246, 238);
+  padding: 15px;
+  text-align: center;
+}
+
+.plant-box a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  display: block;
+}
+
+#foot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(249, 252, 249);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer-icon img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+  transition: transform 0.2s ease;
+}
+
+.footer-icon:hover {
+  color: #007BFF;
+}
+
+.footer-icon:hover img {
+  transform: scale(1.1);
+}
+#home{
+  background-image: url("https://cdn-icons-png.freepik.com/256/5874/5874149.png?uid=R158354983&ga=GA1.1.1940708214.1723121699&semt=ais_hybrid");
+  background-size: cover;
+  position: relative;
+  bottom: 0px;
+  left: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+
+#scanner{
+      
+      background-image: url("https://cdn-icons-png.freepik.com/256/12556/12556916.png?uid=R158354983&ga=GA1.1.1940708214.1723121699&semt=ais_hybrid");
+      background-size: cover;
+      color: black;
+      width: 35px;
+      height: 35px;
+      bottom: 42px;
+      left: 180px;
+}
+
+  
+#help{
+
+  background-image: url("https://cdn-icons-png.freepik.com/256/7646/7646614.png?uid=R158354983&ga=GA1.1.1940708214.1723121699&semt=ais_hybrid");
+  background-size: cover;
+  color: black;
+  width: 35px;
+  height: 35px;
+  bottom: 25px;
+  left: 324px;
+}
+#scan {
+  background-color: rgb(127, 239, 140);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-20px);
+}
+
+
+@media (max-width: 1024px) {
+  .plant-container {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .plant-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .plant-box img {
+      height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .plant-container {
+      grid-template-columns: 1fr;
+  }
+
+  .plant-box img {
+      height: 160px;
+  }
+
+  #foot {
+      height: 60px;
+  }
+
+  #scan {
+      width: 60px;
+      height: 60px;
+  }
+}
